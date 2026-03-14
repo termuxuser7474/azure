@@ -24,10 +24,14 @@ class Config(object):
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    CLIENT_SECRET = "ENTER_CLIENT_SECRET_HERE"
-    CLIENT_ID = "ENTER_CLIENT_ID_HERE"
+    CLIENT_ID = "473f0d10-9154-4d94-9190-e415e40d5422"
 
-    AUTHORITY = "https://login.microsoftonline.com/common"
+    CLIENT_SECRET = "XRh8Q~0Mt4wECGIt-hvl3fgTJDUVRkzuZU11ha-q"
+
+    TENANT_ID = "d28dfd1b-2ebc-41b6-ada3-c18bccdf3163"
+
+    AUTHORITY = f"https://login.microsoftonline.com/{TENANT_ID}"
+
     REDIRECT_PATH = "/getAToken"
 
     SCOPE = ["User.Read"]
